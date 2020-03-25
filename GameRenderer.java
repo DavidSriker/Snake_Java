@@ -10,7 +10,6 @@ public class GameRenderer extends JPanel{
 
     @Override
     public void paintComponent(Graphics elem) {
-        System.out.println("Hello World !!");
         super.paintComponent(elem);
         elem.setColor(new Color(8804653));
         elem.fillRect(0, 0, SnakeLogic.WIDTH, SnakeLogic.HEIGHT);
@@ -36,6 +35,6 @@ public class GameRenderer extends JPanel{
 
         elem.setFont(new Font("SansSerif", Font.ITALIC, 14));
         elem.drawString("Score: " + snake.score, 5, 20);
-        elem.drawString("Time: " + snake.ticks  / 100, SnakeLogic.WIDTH - 100, 20);
+        elem.drawString("Time: " + snake.clockTicks  / 100, SnakeLogic.WIDTH - 100, 20);
     }
 }
