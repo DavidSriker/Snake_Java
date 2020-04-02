@@ -19,7 +19,7 @@ public class SnakeLogic implements ActionListener, KeyListener {
     public static final int WIDTH = 400, HEIGHT = 400, UP = 0, DOWN = 1, LEFT = 2, RIGHT = 3, SCALE = 10;
     public Point treasure;
     public ArrayList<Point> snakeBody = new ArrayList<Point>();
-    public boolean gameOver, paused=true;
+    public boolean gameOver, paused = true;
     public int clockTicks, score;
     public GameRenderer renderer;
     public JFrame jframe;
